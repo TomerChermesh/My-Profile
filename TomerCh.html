@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<title>Tomer Chermesh</title>
+<head>
+	<meta charse="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="cssFile.css">
+
+	
+</head>
+
+<body>
+	<header>
+		<nav id="nav">
+			<a class="link" href="#section1">Home</a>
+			<a class="link" href="#section2">Education</a>
+			<a class="link" href="#section3">Employment</a>
+			<a class="link" href="#section4">Hobbies</a>
+			<a class="link" href="#footer">Contact Me</a>
+		</nav>
+	</header>
+	
+	
+	<!--Section 1: About Me-->
+	<section class="section-about-me" id="section1">
+		<div class="container-fluid">
+			<div class="section-heading"><h2>Tomer Chermesh</h2></div>
+				<p>Full Stack Developer ||  TV Producer</p>
+				<p>27 y/o</p>
+				<p>Herzliya, Israel</p>
+				
+				<h2>I'm CS & Entreprenuership Student and TV Producer from Herzliya, Israel</h2>
+				<p>I enjoy both coding and creation new products ...</p>
+		</div>
+    </section>
+	
+	<!--Section 2: Education-->
+	<section class="section-education" id="section2">
+		<div class="container-fluid">
+			<div class="section-heading"><h2>Education</h2></div>
+				<ul>
+					<li><b>IDC Herzliya 2019 - 2022<b></li>
+						<ul>
+							<p>B.Sc for CS & Entreprenuership, 2nd year (Avg. 85)</p>
+							<p>Diploma for Financial Management (IDC Tools program)</p>
+						</ul>
+					<li><b>Givat Washington College 2012<b></li>
+						<ul>
+							<p>Diploma for Gym Insructor</p>
+						</ul>	
+				</ul>
+				
+				<h2>Languages</h2>
+				<ul>
+					<li>Hebrew</li>
+					<li>English</li>
+					<li>Spanish</li>
+				</ul>
+				
+				<h2>Tools & Technologies</h2>
+				<ul>
+					<li>Microsoft Office</li>
+					<li>Adobe Photoshop</li>
+					<li>Java</li>
+					<li>C</li>
+					<li>Linux</li>
+					<li>Python</li>
+					<li>SQL</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Avid Media Composer</li>
+				</ul>				
+
+		</div>
+    </section>
+	
+	<!--Section 3: -->
+	<section class="section-employment" id="section3">
+		<div class="container-fluid">
+			<div class="section-heading"><h2>Employment</h2></div>
+				<ul>
+					<b>Charlton<b>
+						<p>TV Producer</p>
+						<p>2019-today</p>
+					<b>Virali<b>
+						<p>Copywriter</p>
+						<p>2019</p>						
+					<b>Shenkin Bar<b>
+						<p>Marketing, Team Leader</p>
+						<p>2017-2018</p>
+
+					<b>Dishes Are Done Bar<b>
+						<p>Founder, Active Partner, Marketing & Content, Logistics</p>
+							<p>2016-2017</p>
+				</ul>
+		</div>
+    </section>
+	
+	<!--Section 4: Hobbies-->
+	<section class="section-hobbies" id="section4">
+		<div class="container-fluid">
+			<div class="section-heading"><h2>Hobbies</h2></div>
+			<div class="row">
+				<div class="col-md-4"><b>Football<b></li></div>
+				<div class="col-md-4"><b>Basketball<b></li></div>
+				<div class="col-md-4"><b>Crosswords<b></li></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6"><b>Traveling over the world<b></li></div>
+				<div class="col-md-6"><b>Hanging with friends & family<b></li></div>
+			</div>	
+		</div>
+    </section>
+	
+	<!-- Footer: Contact Me-->
+	<footer class="footer" id="footer">
+		<div class="container-fluid">
+		<div class="section-heading"><h2>Contact Me</h2></div>
+			<form action="#" method="post">
+
+				<div class="field half first">
+					<label for="name">Name</label>
+					<input name="name" id="name" type="text" placeholder="Name">
+				</div>
+				<div class="field half">
+					<label for="email">Email</label>
+					<input name="email" id="email" type="email" placeholder="Email">
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+				</div>
+				<div class="actions">
+					<input value="Send Message" class="button alt" type="submit">
+				</div>
+			</form>
+
+			<div class="icons">
+				<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/tomerch11" class="fa fa-twitter"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/TOMERCHERMESH" class="fa fa-facebook"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tomerch11/" class="fa fa-instagram"></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tomerchermesh/" class="fa fa-linkedin"></a>
+			</div>
+					
+			<div class="copyright">
+				&copy; Tomer Chermesh, 2021</a>.
+			</div>
+		</div>
+	</footer>	
+	
+
+
+<script>
+window.onscroll = function() {navScroll()};
+
+var header = document.getElementById("nav");
+var sticky = header.offsetTop;
+
+function navScroll() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+	header.classList.remove("sticky");
+  }
+}
+
+</script>
+</div>
+</body>
+
+
+</html>
