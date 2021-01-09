@@ -7,48 +7,60 @@ body {
 	font-family: Agency FB;
 }
 
+
 nav {
 	margin-top: 0px;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 	font-family: Agency FB;
 	background-color: #221436;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+footer {
+	background-color: #998970; 
+	color: #E3E1E3;
+	text-align: center;
+	margin-top: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 .link {
-  transition: 0.5s;
-  color: #E3E1E3;
-  font-size: 28px;
-  text-decoration: none;
-  padding: 10px 10px;
-  margin: 0 10px;
+	transition: 0.5s;
+	color: #E3E1E3;
+	font-size: 26px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 10px;
+	margin: 0 10px;
 }
 
 .link:hover {
-  background-color: #E3E1E3;
-  color: #221436;
-  padding: 16px 10px;
+	background-color: #E3E1E3;
+	color: #221436;
+	padding: 10px 10px;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .sticky + .content {
-  padding-top: 102px;
+	padding-top: 102px;
 }
 
 .fa {
-  padding: 10px;
-  font-size: 16px;
-  width: 16px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+	padding: 12px 12px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 4px;
 }
 
 .fa:hover {
@@ -57,38 +69,40 @@ nav {
 }
 
 .fa-facebook {
-  background: #E3E1E3;
-  color: #221436;
+	background: #E3E1E3;
+	color: #221436;
 }
 
 .fa-instagram {
-  background: #E3E1E3 ;
-  color: #221436;
+	background: #E3E1E3;
+	color: #221436;
 }
 
 .fa-twitter {
-  background: #E3E1E3;
-  color: #221436;
+	background: #E3E1E3;
+	color: #221436;
 }
 
 .fa-linkedin {
-  background: #E3E1E3;
-  color: #221436;
+	background: #E3E1E3;
+	color: #221436;
 }
 
 .container-fluid {
 	max-width: 100%;
+	
 	padding: 10px;
 }
 
 .section-heading {
-	font-size: 26px;
+	font-size: 30px;
 	text-align: center;
 }
 
 .section-about-me {
 	background-color: #E3E1E3; 
 	color: #221436;
+	text-align: center;
 }
 
 .section-education {
@@ -106,16 +120,40 @@ nav {
 	color: #221436;
 }
 
-.footer {
-	background-color: #998970; 
-	color: #E3E1E3;
+.icons {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 
-.col-md-4, .col-md-6 {
-	position: relative;
+.copyright {
+	text-align: center;
+	padding: 10px;
+}
+
+/**/
+
+.col-md-3, .col-md-4, .col-md-6, .col-md-8 {
+
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left:15px;
+	float: left;
+}
+
+.col-bsc {
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left:15px;
+	float: left;
+}
+
+.col-center {
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left:15px;
+	float: left
+	padding-left: 20px;
 }
 
 .row {
@@ -123,13 +161,55 @@ nav {
 	margin-left: -15px;
 }
 
-.icons {
+
+
+
+/**/
+.service-item {
+	padding: 25px 30px;
 	text-align: center;
-	padding: 10px;
+	font-size: 24px;
+	color: #E3E1E3;
+	margin-bottom: 30px;
+	background-color: #221436;
 }
 
-.copyright {
-	text-align: center;
-	padding: 10px;
+.service-item .line-dec {
+	width: 45px;
+	height: 3px;
+	background-color: #E3E1E3;
+	margin: 20px auto 15px auto;
+}
+
+
+/**/
+
+input[type=text], textarea {
+	width: 50%; 
+	padding: 12px; 
+	border: 1px solid #221436;
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-bottom: 16px;
+	resize: none; 
+	background-color: #E3E1E3;
+	font-size: 14px;
+	font-family: Agency_FB;
+}
+
+input[type=submit] {
+	background-color: #E3E1E3;
+	color: #221436;
+	padding: 14px 30px;
+	border: 1px solid #221436;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: Agency_FB;
+}
+
+input[type=submit]:hover {
+	background-color: #221436;
+	color: #E3E1E3;
 }
 

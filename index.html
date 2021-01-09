@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <title>Tomer Chermesh</title>
+<link rel="icon" type="image/jpg" href=".\images\self"/>
 <head>
 	<meta charse="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="index.css">
-
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -31,6 +31,10 @@
 				
 				<h2>I'm CS & Entreprenuership Student and TV Producer from Herzliya, Israel</h2>
 				<p>I enjoy both coding and creation new products ...</p>
+				
+								<h2>Languages</h2>
+				<p>Hebrew</p>
+				<p>English</p>
 		</div>
     </section>
 	
@@ -38,41 +42,48 @@
 	<section class="section-education" id="section2">
 		<div class="container-fluid">
 			<div class="section-heading"><h2>Education</h2></div>
-				<ul>
-					<li><b>IDC Herzliya 2019 - 2022<b></li>
-						<ul>
-							<p>B.Sc for CS & Entreprenuership, 2nd year (Avg. 85)</p>
-							<p>Diploma for Financial Management (IDC Tools program)</p>
-						</ul>
-					<li><b>Givat Washington College 2012<b></li>
-						<ul>
-							<p>Diploma for Gym Insructor</p>
-						</ul>	
-				</ul>
-				
-				<h2>Languages</h2>
-				<ul>
-					<li>Hebrew</li>
-					<li>English</li>
-					<li>Spanish</li>
-				</ul>
-				
-				<h2>Tools & Technologies</h2>
-				<ul>
-					<li>Microsoft Office</li>
-					<li>Adobe Photoshop</li>
-					<li>Java</li>
-					<li>C</li>
-					<li>Linux</li>
-					<li>Python</li>
-					<li>SQL</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Avid Media Composer</li>
-				</ul>				
-
-		</div>
+				<div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="service-item">
+                                <h4>B.Sc for CS & Entreprenuership (2019-)</h4>
+                                <div class="line-dec"></div>
+									<p>2nd year (Avg. 85)</p>
+									<p>IDC Herzliya</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="service-item">
+                                <h4>Diploma for Financial Management (2020)</h4>
+								<div class="line-dec"></div>
+									<p>IDC Tools program</p>
+                            </div>
+							<div class="service-item">
+                                <h4>Diploma for Gym Insructor (2012)</h4>
+                                <div class="line-dec"></div>
+                                <p>Givat Washington College</p>
+                            </div>
+                        </div>
+						<div class="col-md-3">
+                            <div class="service-item">
+                                <h4>Tools & Technologies</h4>
+                                <div class="line-dec"></div>
+								<p>Microsoft Office</p>
+								<p>Adobe Photoshop</p>
+								<p>Java</p>
+								<p>C</p>
+								<p>Linux</p>
+								<p>Python</p>
+								<p>SQL</p>
+								<p>HTML</p>
+								<p>CSS</p>
+								<p>JavaScript</p>
+								<p>Avid Media Composer</p>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
     </section>
 	
 	<!--Section 3: -->
@@ -116,25 +127,21 @@
 	<!-- Footer: Contact Me-->
 	<footer class="footer" id="footer">
 		<div class="container-fluid">
-		<div class="section-heading"><h2>Contact Me</h2></div>
-			<form action="#" method="post">
+			<div class="section-heading"><h2>Contact Me</h2></div>
+			<form action="action_page">
 
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input name="name" id="name" type="text" placeholder="Name">
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input name="email" id="email" type="email" placeholder="Email">
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-				</div>
-				<div class="actions">
-					<input value="Send Message" class="button alt" type="submit">
-				</div>
+				<input type="text" id="fullname" name="fullname" placeholder="Full Name">
+
+				<input type="text" id="email" name="email" placeholder="Email Address">
+				
+				<input type="text" id="subject" name="subject" placeholder="Subject">
+
+				<textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+
+				<p></p>
+				<a href="mailto:tomerchermesh@gmail.com"><input type="submit" value="Submit"></a>
 			</form>
+  
 
 			<div class="icons">
 				<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/tomerch11" class="fa fa-twitter"></a>
