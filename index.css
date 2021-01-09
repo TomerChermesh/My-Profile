@@ -90,8 +90,8 @@ footer {
 
 .container-fluid {
 	max-width: 100%;
-	
-	padding: 10px;
+	height: 580px;
+	padding: 20px ;
 }
 
 .section-heading {
@@ -150,10 +150,14 @@ footer {
 
 .col-center {
 	min-height: 1px;
-	padding-right: 15px;
 	padding-left:15px;
-	float: left
-	padding-left: 20px;
+	float: left;
+}
+
+.col-tools {
+	min-height: 1px;
+	padding-left:15px;
+	float: left;
 }
 
 .row {
@@ -169,16 +173,22 @@ footer {
 	padding: 25px 30px;
 	text-align: center;
 	font-size: 24px;
-	color: #E3E1E3;
+	color: #221436;
 	margin-bottom: 30px;
-	background-color: #221436;
+	border: 3px solid #221436;
+	border-radius: 4px; 
+	box-sizing: border-box; 
 }
 
 .service-item .line-dec {
 	width: 45px;
 	height: 3px;
-	background-color: #E3E1E3;
+	background-color: #221436;
 	margin: 20px auto 15px auto;
+}
+
+.service-item:hover {
+	color: #E3E1E3;
 }
 
 
