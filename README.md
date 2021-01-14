@@ -1,0 +1,1 @@
+double click on "index.html" will open my website. enjoy.

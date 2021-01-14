@@ -1,31 +1,42 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Agency_FB);
+@font-face {
+    font-family: 'Agency_FB';
+    src: url('fonts\AGENCYR.ttf');
+}
 
-body {
+/* General */
+
+body, html{
 	margin: 0px;
 	background-color: #E3E1E3;
 	font-family: Agency FB;
+	height: 100%;
+	width: 100%;
+	scroll-behavior: smooth;
 }
 
-
 nav {
-	margin-top: 0px;
-	padding: 10px;
+	position: fixed;
+	padding: 10px ;
 	text-align: center;
 	font-family: Agency FB;
 	background-color: #221436;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	width: 100%;
 }
 
 footer {
 	background-color: #998970; 
 	color: #E3E1E3;
 	text-align: center;
-	margin-top: 20px;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+img {
+	vertical-align: middle;
 }
 
 .link {
@@ -88,8 +99,11 @@ footer {
 	color: #221436;
 }
 
+/* Sections - General */
+
 .container-fluid {
-	max-width: 100%;
+	overflow: hidden;
+	width: 100%;
 	height: 570px;
 	padding: 10px ;
 }
@@ -105,43 +119,68 @@ footer {
 	background-color: #E3E1E3; 
 	color: #221436;
 	text-align: center;
+	padding-top: 3%;
+
 }
 
 .section-education {
 	background-color: #394D80; 
 	color: #E3E1E3;
+	padding-top: 3%;
+
 }
 
 .section-employment {
 	background-color: #8098B5; 
 	color: #221436;
+	padding-top: 3%;
+
 }
 
 .section-hobbies {
 	background-color: #E3E1E3; 
 	color: #221436;
+	padding-top: 3%;
 }
 
-.icons {
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 10px;
+.section-gallery {
+	background-color: #394D80; 
+	color: #E3E1E3;
+	padding-top: 3%;
+
 }
 
-.copyright {
-	text-align: center;
-	padding: 10px;
+/*About*/
+
+.about-img {
+	border-radius: 50%;
 }
 
-/* Education Section's Content*/
+.row-image {
+	float:center;
+}
 
-.col-md-3, .col-md-4, .col-md-6, .col-md-8 {
-
+.row-details {
 	min-height: 1px;
-	padding-right: 15px;
-	padding-left:15px;
-	float: left;
+	float: center;
+	margin-left: 30%;
 }
+
+.col-details {
+	float: left;
+	display: inline-block;
+	padding-right: 2%;
+}
+
+.col-details p {
+	font-size: 24px;
+}
+
+.about-right {
+	margin-right: 16px;
+}
+
+/* Education */
 
 .col-bsc {
 	min-height: 1px;
@@ -156,10 +195,11 @@ footer {
 	text-align: center;
 	font-size: 24px;
 	color: #E3E1E3;
-	margin-left: 300px;
+	margin-left: 215px;
 	border: 3px solid #E3E1E3;
 	border-radius: 4px; 
 	box-sizing: border-box; 
+
 }
 
 .service-bsc:hover {
@@ -171,7 +211,7 @@ footer {
 .col-diploma {
 	min-height: 1px;
 	padding-left:15px;
-	float: center;
+	float: left;
 	display: inline-block;
 }
 
@@ -194,17 +234,17 @@ footer {
 
 .col-tech {
 	min-height: 1px;
-	padding-right:15px;
-	float: right;
+	padding-left: 30px;
+	float: left;
 	display: inline-block;
 }
 
 .service-tech {
-	padding: 15px 30px 80px 30px;
+	padding: 15px 30px 85px 30px;
 	text-align: center;
 	font-size: 24px;
 	color: #E3E1E3;
-
+	margin-bottom: 100px;
 	border: 3px solid #E3E1E3;
 	border-radius: 4px; 
 	box-sizing: border-box; 
@@ -218,13 +258,13 @@ footer {
 
 .col-tools {
 	min-height: 1px;
-	padding-right:15px;
-	float: right;
+	padding-left:30px;
+	float: left;
 	display: inline-block;
 }
 
 .service-tools {
-	padding: 15px 30px 80px 30px;
+	padding: 15px 30px 147px 30px;
 	text-align: center;
 	font-size: 24px;
 	color: #E3E1E3;
@@ -240,8 +280,6 @@ footer {
 	color: #221436;
 }
 
-
-
 .block-word {
 	display: inline-block;
 	padding-right: 10px;
@@ -255,69 +293,14 @@ footer {
 	margin: 20px auto 15px auto;
 }
 
-/* Contact Form */
-
-input[type=text], textarea {
-	width: 50%; 
-	padding: 10px; 
-	border: 1px solid #221436;
-	border-radius: 4px; 
-	box-sizing: border-box; 
-	margin-bottom: 16px;
-	resize: none; 
-	background-color: #E3E1E3;
-	font-size: 14px;
-	font-family: Agency_FB;
-}
-
-input[type=submit] {
-	margin-top: -10px;
-	background-color: #E3E1E3;
-	color: #221436;
-	padding: 14px 30px;
-	border: 1px solid #221436;
-	border-radius: 4px;
-	cursor: pointer;
-	font-size: 20px;
-	font-family: Agency_FB;
-}
-
-input[type=submit]:hover {
-	background-color: #221436;
-	color: #E3E1E3;
-}
-
-.email-field {
-	display: inline-block;
-	width: 50%;
-	position: relative;
-	right: 11.2%;
-}
-
-.name-field {
-	display: inline-block;
-	width: 47%;
-	position: relative;
-	left: 11.9%;
-}
-
-.unblock-field {
-	display: outline-block;
-}
-
-/**/
-
-
-
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Employment Timeline */
 
 .timeline {
-	position: relative;
-	left: 15%;
-	top: -80px;
+	margin-left: 15%;
+	margin-right: auto;
+	margin-top: -3%;
+	width: 100%;
 	white-space: nowrap;
-	overflow-x: hidden;
 }
 
 .timeline ol {
@@ -411,8 +394,8 @@ input[type=submit]:hover {
 	margin-bottom: 8px;
 }
 
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Employment Timeline - General Media Queries */
+
 @media screen and (max-width: 599px) {
 	.timeline ol,
 	.timeline ol li {
@@ -466,6 +449,164 @@ input[type=submit]:hover {
 	.timeline ol li:nth-last-child(2) div::before,
 	.timeline ol li:not(:last-child)::after,
 }
+
+/* Hobbies */
+
+.col-hobbies {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.col-hobbies h2 {
+	text-align: center;
+	font-weight: 400;
+	color: #221436;
+}
+
+.row-hobbies {
+	 padding-top: 20px;
+	 display: flex;
+	 flex-wrap: wrap;
+	 margin-top: calc(var(--bs-gutter-y) * -1);
+	 margin-right: calc(var(--bs-gutter-x)/ -2);
+	 margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.row-hobbies > * {
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: calc(var(--bs-gutter-x)/ 2);
+	padding-left: calc(var(--bs-gutter-x)/ 2);
+	margin-top: var(--bs-gutter-y);
+}
+
+.col-hobbies {
+	flex: 0 0 auto;
+	width: 25%
+}
+
+/* Gallery Slideshow */
+
+.mySlides {
+	display: none;
+}
+
+.slideshow-container {
+	max-width: 500px;
+	margin: auto;
+}
+
+.cursors {
+	margin-left: 42%;
+	margin-top: 3%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	padding: 16px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: #ffffff;
+	color: #221436;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Contact Footer */
+
+input[type=text], textarea {
+	width: 50%; 
+	padding: 10px; 
+	border: 1px solid #221436;
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-bottom: 16px;
+	resize: none; 
+	background-color: #E3E1E3;
+	font-size: 14px;
+	font-family: Agency_FB;
+}
+
+input[type=submit] {
+	margin-top: -10px;
+	background-color: #E3E1E3;
+	color: #221436;
+	padding: 14px 30px;
+	border: 1px solid #221436;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: Agency_FB;
+}
+
+input[type=submit]:hover {
+	background-color: #221436;
+	color: #E3E1E3;
+}
+
+.email-field {
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	right: 11.2%;
+}
+
+.name-field {
+	display: inline-block;
+	width: 47%;
+	position: relative;
+	left: 11.9%;
+}
+
+.unblock-field {
+	display: outline-block;
+}
+
+.icons {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.copyright {
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
 
 
 
